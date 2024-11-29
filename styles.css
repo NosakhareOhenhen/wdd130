@@ -1,10 +1,3 @@
-/* Universal Selector */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -68,6 +61,7 @@ main img {
 
 /* About Section */
 aside {
+    background-color: #e9f5e9;
     padding: 20px;
     margin: 20px auto;
     max-width: 1200px;
@@ -77,38 +71,12 @@ aside {
 .profile-img {
     width: 200px;
     border-radius: 50%;
-    float: right;
-    margin-left: 15px;
+    display: block;
+    margin: 0 auto 15px;
 }
 
 aside h2 {
     color: #4CAF50;
-}
-
-/* Box Styling */
-.box {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    background-color: #e9f5e9;
-    color: #333;
-}
-
-/* Overlay Styling */
-.overlay {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.overlay h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
 }
 
 /* Footer */
@@ -140,6 +108,3 @@ footer a:hover {
         padding: 10px;
     }
 }
-
-/* Class Selectors */
-/* ----------------------------- */
