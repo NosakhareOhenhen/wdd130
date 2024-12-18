@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+/* Header Styles */
+header {
+  background: #004d40;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #b2dfdb;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero .cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #00796b;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+  background: #004d40;
+}
+
+/* Trips Grid */
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.trips-grid article {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.trips-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.trips-grid h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #004d40;
+}
+
+/* Trips Table */
+.trips-table {
+  padding: 2rem;
+  background: #e0f2f1;
+  margin: 2rem 0;
+}
+
+.trips-table h2 {
+  text-align: center;
+  color: #004d40;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #004d40;
+}
+
+.trips-table th {
+  background: #004d40;
+  color: #fff;
+}
+
+.trips-table tr:nth-child(even) {
+  background: #b2dfdb;
+}
+
+/* Footer Styles */
+footer {
+  background: #004d40;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer nav a {
+  color: #b2dfdb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer nav a:hover {
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #b2dfdb;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .trips-grid {
+      grid-template-columns: 1fr;
+  }
+}
